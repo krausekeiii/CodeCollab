@@ -16,10 +16,15 @@ To compile this code on a Linux machine:
 1.	Find the directory which the files are stored
 2.	Open a separate command prompt for each process (1 for client 1 for server) in their respective directories (client and server directory)
 3.	Start the server process by typing:
+4.	
 a.	javac server.java
+
 b.	java server.java
+
 4.	To start the client process, type:
+5.	
 a.	javac client.java
+
 b.	java client.java <IP Address of Host Machine>
 
 To use the program, it is helpful to create your own .txt file in the client process and edit it so you can send a custom message and check its correctness on the server side. In the submission, I have included a sample file to use in the client directory. This file is named “test.txt.” Upon execution of client process, you will be prompted to enter the name of the file you wish to send, type the full name with extension (ex. test.txt); in the completed version I would like to change this to the directory your project is in in order to be able to update an entire folder automatically. After this, a menu will appear of options, you may edit the file or send it right away without making edits. You may also try to request without sending to see the exception handling. 
