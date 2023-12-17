@@ -39,19 +39,19 @@ Available Commands
 
 The client end of this application allows for input from users, with functionality similar to GitHub’s push and pull. The client-side application remains idle until a command is prompted, where it will then execute that command and produce output that it has finished. If an invalid command is entered, the client will print out a message to the terminal with a menu of lists of commands. The command list contains:
 
-	“s”:
+	“s”
  
 The “s” command stands for send. This is what the client will prompt when wanting to push their work to the server. This command calls the sendFile function to handle sending and updating the working file to the server.
 
-	“r”:
+	“r”
  
 The “r” command stands for receive. This is what the client will prompt when wanting to receive updated files, presumably from a peer, and update their current working file. This command calls the readFile function to handle receiving a file from the TCP socket.
 
-	“h”:
+	“h”
  
 The “h” command is for help. The client can use this to bring up a menu, which has a list of all of the available commands.
 
-	“q”:
+	“q”
  
 The “q” command stands for quit. When wanting to finish their session, a user can send “q” to close the connection with the TCP server. The server will respond by asking if the user would like to quit the server session as well. The user can type “y” in the server terminal to do so, allowing for a graceful termination with no runaway processes.
 
